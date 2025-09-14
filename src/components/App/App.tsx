@@ -21,7 +21,10 @@ export default function App() {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => {
+  setIsModalOpen(false);
+  setSelectedMovie(null);
+};
 
   function setIsNotFind() {
     toast.error("No movies found for your request.");
